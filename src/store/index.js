@@ -1,4 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import projectData from './modules/projectData';
+import paygProject from './modules/paygProject';
+import pageContent from './modules/pageContent';
+
 
 export default createStore({
   state: {
@@ -8,5 +12,8 @@ export default createStore({
   actions: {
   },
   modules: {
+    projectData,
+    paygProject,
+    pageContent
   }
 })
